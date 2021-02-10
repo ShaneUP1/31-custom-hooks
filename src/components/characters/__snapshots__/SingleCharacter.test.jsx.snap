@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SingleCharacter component renders a single character 1`] = `
+<DocumentFragment>
+  <figure>
+    <img
+      alt="Ari"
+      src="www.url.com"
+    />
+    <figcaption>
+      Ari
+    </figcaption>
+  </figure>
+</DocumentFragment>
+`;
