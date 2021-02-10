@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getCharacters } from '../../services/airBenderApi';
+import { findCharacterById, getCharacters } from '../../services/airBenderApi';
 
 export const useCharacters = () => {
   const [loading, setLoading] = useState(true);
