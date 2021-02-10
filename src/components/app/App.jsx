@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom';
 import AllCharacters from '../containers/AllCharacters';
 import CharacterById from '../containers/CharacterById';
-import Header from '../header/header';
+import Header from '../header/Header';
 
 
 export default function App() {
