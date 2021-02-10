@@ -13,7 +13,7 @@ const server = setupServer(
   })
 );
 
-describe('AllCharacters container', () => {
+describe('CharacterById container', () => {
   beforeAll(() => server.listen());
   afterAll(() => server.close());
 
