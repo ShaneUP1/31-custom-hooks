@@ -10,25 +10,29 @@ exports[`Header component renders a header 1`] = `
     >
       Last Airbender
     </h1>
-    <div
-      class="headerbuttons"
+    <span
+      class="linkcontainer"
     >
-      <label
-        for="toggle"
+      <div
+        class="headerbuttons"
       >
-        Theme Toggler
-        <input
-          id="toggle"
-          type="checkbox"
-        />
-      </label>
-      <a
-        class="homelink"
-        href="/"
-      >
-        Home
-      </a>
-    </div>
+        <label
+          for="toggle"
+        >
+          Theme Toggler
+          <input
+            id="toggle"
+            type="checkbox"
+          />
+        </label>
+        <a
+          class="homelink"
+          href="/"
+        >
+          Home
+        </a>
+      </div>
+    </span>
   </div>
 </DocumentFragment>
 `;

@@ -3,6 +3,7 @@
 
 .title {
   font-family: cursive;
+  text-shadow: 10px 5px 5px lightgray;
   text-align: center;
   padding-top: 20px;
   font-size: 70px;
@@ -10,15 +11,33 @@
   margin-bottom: 10px;
 }
 
-.headerbuttons {
-  display: flex;
-  justify-content: space-between;
-  align-items: left;
-}
-
 .light {
   background-color: white;
   color: black;
+}
+
+.headerbuttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  font-size: 16px;
+}
+
+label {
+  margin-left: 10px;
+  text-shadow: 10px 5px 5px gray;
+}
+
+.homelink {
+  color: black;
+  margin-top: 10px;
+  margin-left: 5px;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid black;
+  box-shadow: 10px 5px 5px gray;
 }
 
 .dark {
@@ -26,10 +45,6 @@
   color: white;
 }
 
-label {
-  margin-left: 10px;
-}
-
-.homelink {
-  margin-right: 10px;
+.linkcontainer {
+  display: flex;
 }
