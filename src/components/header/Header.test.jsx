@@ -13,7 +13,7 @@ describe('Header component', () => {
           <Header />
         </MemoryRouter>
       </ThemeProvider>)
-    ;
+      ;
     expect(asFragment()).toMatchSnapshot();
   });
 });

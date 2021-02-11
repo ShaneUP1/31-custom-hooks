@@ -14,12 +14,14 @@ const Header = () => {
   return (
     <div className={`${styles.Header} ${styles[theme]}`}>
       <h1 className={styles.title}>Last Airbender</h1>
-      <div className={styles.headerbuttons}>
-        <label htmlFor="toggle">Theme Toggler
-        <input id="toggle" type="checkbox" onChange={toggle}/>
-        </label>
-        <Link className={styles.homelink} to={'/'}>Home</Link>
-      </div>
+      <span className={styles.linkcontainer}>
+        <div className={styles.headerbuttons}>
+          <label htmlFor="toggle">Theme Toggler
+            <input id="toggle" type="checkbox" onChange={toggle}/>
+          </label>
+          <Link className={styles.homelink} to={'/'}>Home</Link>
+        </div>
+      </span>
     </div>
   );
 };
