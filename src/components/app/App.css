@@ -1,0 +1,16 @@
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}

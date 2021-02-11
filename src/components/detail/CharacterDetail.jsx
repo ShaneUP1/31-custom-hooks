@@ -19,7 +19,7 @@ const CharacterDetail = ({ _id, name, photoUrl, affiliation, allies, enemies }) 
   }
 
   return (
-    <div data-testid="character-detail">
+    <div data-testid="character-detail" className="character-detail">
       <img src={photoUrl} alt={name} />
       <h2>{name}</h2>
       <p>{affiliation}</p>

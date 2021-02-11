@@ -1,0 +1,35 @@
+.Header {
+}
+
+.title {
+  font-family: cursive;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 70px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.headerbuttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+}
+
+.light {
+  background-color: white;
+  color: black;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+label {
+  margin-left: 10px;
+}
+
+.homelink {
+  margin-right: 10px;
+}

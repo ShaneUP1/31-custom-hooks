@@ -7,18 +7,23 @@ import {
 import AllCharacters from '../containers/AllCharacters';
 import CharacterById from '../containers/CharacterById';
 import Header from '../header/Header';
+import { ThemeProvider } from '../state/themeContext';
+import './App.css';
 
 
-export default function App() {
+export default function App() { 
+  
   return (
-    <>
+    <div>
       <Router>
-        <Header />
-        <Switch>
-          <Route exact path="/" component={AllCharacters} />;
-          <Route path="/characters/:id" component={CharacterById} />
-        </Switch>
+        <ThemeProvider>
+          <Header />
+          <Switch>
+            <Route exact path="/" component={AllCharacters} />;
+            <Route path="/characters/:id" component={CharacterById} />
+          </Switch>
+        </ThemeProvider>
       </Router>
-    </>
+    </div>
   );
 }

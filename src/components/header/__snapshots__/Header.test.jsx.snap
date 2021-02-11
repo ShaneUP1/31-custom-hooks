@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders a header 1`] = `
+<DocumentFragment>
+  <div
+    class="Header light"
+  >
+    <h1
+      class="title"
+    >
+      Last Airbender
+    </h1>
+    <div
+      class="headerbuttons"
+    >
+      <label
+        for="toggle"
+      >
+        Theme Toggler
+        <input
+          id="toggle"
+          type="checkbox"
+        />
+      </label>
+      <a
+        class="homelink"
+        href="/"
+      >
+        Home
+      </a>
+    </div>
+  </div>
+</DocumentFragment>
+`;
