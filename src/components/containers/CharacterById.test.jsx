@@ -6,6 +6,7 @@ import { setupServer } from 'msw/node';
 import { MemoryRouter } from 'react-router-dom';
 import detailApiResponse from '../../fixtures/characterDetail.json';
 import CharacterById from './CharacterById';
+import { ThemeProvider } from '../state/themeContext';
 
 const server = setupServer(
   rest.get('https://last-airbender-api.herokuapp.com/api/v1/characters/', (req, res, ctx) => {
@@ -19,9 +20,11 @@ describe('CharacterById container', () => {
 
   it('fetches and displays a character detail', async() => {
     render(
-      <MemoryRouter>
-        <CharacterById match={{ params: { id: '5cf5679a915ecad153ab68d1' } }}/>
-      </MemoryRouter>
+      <ThemeProvider>
+        <MemoryRouter>
+          <CharacterById match={{ params: { id: '5cf5679a915ecad153ab68d1' } }}/>
+        </MemoryRouter>
+      </ThemeProvider>
     );
 
     screen.getByText('Still Loading');

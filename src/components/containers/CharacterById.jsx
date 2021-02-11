@@ -1,13 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CharacterDetail from '../detail/CharacterDetail';
-import { useCharacterById } from '../hooks/characters';
+import { useCharacterById } from '../state/characters';
+import { useTheme } from '../state/themeContext';
+import styles from './CharacterById.css';
 
 const CharacterById = ({ match }) => {
   const { loading, character } = useCharacterById(match.params.id);
+  const { theme, setTheme } = useTheme();
 
   if(loading) return <h2>Still Loading</h2>;
-  return <CharacterDetail {...character} />;
+  return (
+    <div className={`${styles.CharacterById} ${styles[theme]}`}>
+      <CharacterDetail {...character} />
+    </div>
+  );
 };
 
 CharacterById.propTypes = {
